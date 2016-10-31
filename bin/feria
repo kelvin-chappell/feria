@@ -11,5 +11,5 @@ if [ ! -e "$jar" ]; then
 fi
 
 pushd $basedir
-java -jar $jar "$@"
+java -jar -Xmx6g $jar "$@"
 popd
